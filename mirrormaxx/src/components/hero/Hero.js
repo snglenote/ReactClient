@@ -8,17 +8,17 @@ const Hero = ({movies}) => {
     <div className='movie-carousel-container'>
         <Carousel>
             {
-                movies.map((movie) =>{
+                movies?.map((movies) =>{
                     return(
                         <Paper>
                             <div className='movie-card-container'>
                                 <div className='movie-card'>
                                     <div className='movie-detail'>
                                         <div className='movie-poster'>
-                                            <img src={movie.poster} alt="" />
+                                            <img src={movies.poster} alt="" />
                                         </div>
                                         <div className="movie-title">
-                                            <h4>{movie.title}</h4>
+                                            <h4>{movies.title}</h4>
                                         </div>
 
                                     </div>
